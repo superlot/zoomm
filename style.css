@@ -1,0 +1,9 @@
+#full{
+  position:absolute;
+  z-index:999;
+  right:0;
+  bottom:0;
+  margin-right:5px;
+  
+  margin-bottom:5px;
+}

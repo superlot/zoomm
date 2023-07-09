@@ -9,10 +9,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  
- 
-<script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    
     <title>KeyShotVR</title>
 	
 	<link rel="stylesheet" href="./style.css">
@@ -26,7 +23,7 @@
   right:0;
   bottom:0;
   margin-right:5px;
-  width:5%;
+  width:3%;
   margin-bottom:5px;
 }
 
@@ -95,16 +92,6 @@ max-width:80% !important;
 	right:10px;
 }
   
-  
-  
-  #KeyShotVR {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-  
     </style>
     <script type="text/javascript" src="index/files/KeyShotVR.js"></script>
     <script type="text/javascript">
@@ -124,8 +111,8 @@ max-width:80% !important;
         var vMouseSensitivity = 1;
         var uStartIndex = 9;
         var vStartIndex = 0;
-        var minZoom = -1;
-        var maxZoom = 1;
+        var minZoom = -2;
+        var maxZoom = 2;
         var rotationDamping = 0.96;
         var downScaleToBrowser = true;
         var addDownScaleGUIButton = false;
@@ -219,250 +206,6 @@ function fun2() {
 
 </script>
 	<script  src="./script.js"></script>
-
-
-<script>
-    var element = document.getElementById('KeyShotVR');
-    var hammertime = new Hammer(element);
-
-    hammertime.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-    hammertime.get('
-
-    var element = document.getElementById('KeyShotVR');
-    var hammertime = new Hammer(element);
-
-    hammertime.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-    hammertime.get('pinch').set({ enable: true });
-
-    var posX = 0,
-        posY = 0,
-        scale = 1,
-        lastPosX = 0,
-        lastPosY = 0,
-        lastScale = 1;
-
-    hammertime.on('pan
-
-    var element = document.getElementById('KeyShotVR');
-    var hammertime = new Hammer(element);
-
-    hammertime.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-    hammertime.get('pinch').set({ enable: true });
-
-    var posX = 0,
-        posY = 0,
-        scale = 1,
-        lastPosX = 0,
-        lastPosY = 0,
-        lastScale = 1;
-
-    hammertime.on('panstart panmove', function (e) {
-      posX = lastPosX + e.deltaX;
-      posY = lastPosY + e.deltaY;
-
-      element.style.transform = 'translate
-
-    var element = document.getElementById('KeyShotVR');
-    var hammertime = new Hammer(element);
-
-    hammertime.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-    hammertime.get('pinch').set({ enable: true });
-
-    var posX = 0,
-        posY = 0,
-        scale = 1,
-        lastPosX = 0,
-        lastPosY = 0,
-        lastScale = 1;
-
-    hammertime.on('panstart panmove', function (e) {
-      posX = lastPosX + e.deltaX;
-      posY = lastPosY + e.deltaY;
-
-      element.style.transform = '
-
-    var element = document.getElementById('KeyShotVR');
-    var hammertime = new Hammer(element);
-
-    hammertime.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-    hammertime.get('pinch').set({ enable: true });
-
-    var posX = 0,
-        posY = 0,
-        scale = 1,
-        lastPosX = 0,
-        lastPosY = 0,
-        lastScale = 1;
-
-    hammertime.on('panstart panmove', function (e) {
-      posX = lastPosX + e.deltaX;
-      posY = lastPosY + e.deltaY;
-
-      element.style.transform = 'translate(' + posX + 'px, ' + posY + 'px) scale(' + scale + ')';
-    });
-
-    hammertime.on('pin
-
-    var element = document.getElementById('KeyShotVR');
-    var hammertime = new Hammer(element);
-
-    hammertime.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-    hammertime.get('pinch').set({ enable: true });
-
-    var posX = 0,
-        posY = 0,
-        scale = 1,
-        lastPosX = 0,
-        lastPosY = 0,
-        lastScale = 1;
-
-    hammertime.on('panstart panmove', function (e) {
-      posX = lastPosX + e.deltaX;
-      posY = lastPosY + e.deltaY;
-
-      element.style.transform = 'translate(' + posX + 'px, ' + posY + 'px) scale(' + scale + ')';
-    });
-
-    hammertime.on('
-
-    var element = document.getElementById('KeyShotVR');
-    var hammertime = new Hammer(element);
-
-    hammertime.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-    hammertime.get('pinch').set({ enable: true });
-
-    var posX = 0,
-        posY = 0,
-        scale = 1,
-        lastPosX = 0,
-        lastPosY = 0,
-        lastScale = 1;
-
-    hammertime.on('panstart panmove', function (e) {
-      posX = lastPosX + e.deltaX;
-      posY = lastPosY + e.deltaY;
-
-      element.style.transform = 'translate(' + posX + 'px, ' + posY + 'px) scale(' + scale + ')';
-    });
-
-    hammertime.on('pinchstart pinchmove', function (e) {
-      scale = Math.max(0.5, Math.min(lastScale * e.scale, 2));
-      element.style.transform = 'translate
-
-    var element = document.getElementById('KeyShotVR');
-    var hammertime = new Hammer(element);
-
-    hammertime.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-    hammertime.get('pinch').set({ enable: true });
-
-    var posX = 0,
-        posY = 0,
-        scale = 1,
-        lastPosX = 0,
-        lastPosY = 0,
-        lastScale = 1;
-
-    hammertime.on('panstart panmove', function (e) {
-      posX = lastPosX + e.deltaX;
-      posY = lastPosY + e.deltaY;
-
-      element.style.transform = 'translate(' + posX + 'px, ' + posY + 'px) scale(' + scale + ')';
-    });
-
-    hammertime.on('pinchstart pinchmove', function (e) {
-      scale = Math.max(0.5, Math.min(lastScale * e.scale, 2));
-      element.style.transform = '
-
-    var element = document.getElementById('KeyShotVR');
-    var hammertime = new Hammer(element);
-
-    hammertime.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-    hammertime.get('pinch').set({ enable: true });
-
-    var posX = 0,
-        posY = 0,
-        scale = 1,
-        lastPosX = 0,
-        lastPosY = 0,
-        lastScale = 1;
-
-    hammertime.on('panstart panmove', function (e) {
-      posX = lastPosX + e.deltaX;
-      posY = lastPosY + e.deltaY;
-
-      element.style.transform = 'translate(' + posX + 'px, ' + posY + 'px) scale(' + scale + ')';
-    });
-
-    hammertime.on('pinchstart pinchmove', function (e) {
-      scale = Math.max(0.5, Math.min(lastScale * e.scale, 2));
-      element.style.transform = 'translate(' + posX + 'px,
-
-    var element = document.getElementById('KeyShotVR');
-    var hammertime = new Hammer(element);
-
-    hammertime.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-    hammertime.get('pinch').set({ enable: true });
-
-    var posX = 0,
-        posY = 0,
-        scale = 1,
-        lastPosX = 0,
-        lastPosY = 0,
-        lastScale = 1;
-
-    hammertime.on('panstart panmove', function (e) {
-      posX = lastPosX + e.deltaX;
-      posY = lastPosY + e.deltaY;
-
-      element.style.transform = 'translate(' + posX + 'px, ' + posY + 'px) scale(' + scale + ')';
-    });
-
-    hammertime.on('pinchstart pinchmove', function (e) {
-      scale = Math.max(0.5, Math.min(lastScale * e.scale, 2));
-      element.style.transform = 'translate(' + posX + 'px, ' + posY + 'px) scale(' + scale + ')';
-    });
-
-    hammertime.on('panend', function () {
-      lastPosX = posX < 0 ? posX : 0;
-      lastPosY = posY < 0 ? posY : 0;
-    });
-
-    hammertime.on('pinch
-
-    var element = document.getElementById('KeyShotVR');
-    var hammertime = new Hammer(element);
-
-    hammertime.get('pan').set({ direction: Hammer.DIRECTION_ALL });
-    hammertime.get('pinch').set({ enable: true });
-
-    var posX = 0,
-        posY = 0,
-        scale = 1,
-        lastPosX = 0,
-        lastPosY = 0,
-        lastScale = 1;
-
-    hammertime.on('panstart panmove', function (e) {
-      posX = lastPosX + e.deltaX;
-      posY = lastPosY + e.deltaY;
-
-      element.style.transform = 'translate(' + posX + 'px, ' + posY + 'px) scale(' + scale + ')';
-    });
-
-    hammertime.on('pinchstart pinchmove', function (e) {
-      scale = Math.max(0.5, Math.min(lastScale * e.scale, 2));
-      element.style.transform = 'translate(' + posX + 'px, ' + posY + 'px) scale(' + scale + ')';
-    });
-
-    hammertime.on('panend', function () {
-      lastPosX = posX < 0 ? posX : 0;
-      lastPosY = posY < 0 ? posY : 0;
-    });
-
-    hammertime.on('pinchend', function () {
-      lastScale = scale;
-    });
-  </script>
-
   </body>
+</html>
 </html>

@@ -1,9 +1,13 @@
-#full{
-  position:absolute;
-  z-index:999;
-  right:0;
-  bottom:0;
-  margin-right:5px;
-  
-  margin-bottom:5px;
+button {  
+  color: rgba(255,255,255,0.87);
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 2px;
+  background-color: #c2185b;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0, 0.26);
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
 }

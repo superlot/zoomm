@@ -1,11 +1,5 @@
-<!--
-  KeyShot VR
-  (c) Copyright 2012-2014 Luxion ApS - All Rights Reserved.
-<<a id="back" href="javascript:history.back();"><img src="images/b1.png" alt="HTML tutorial" style="width:50px;height:50px;border:0;"></a>
--->
-
 <!DOCTYPE html>
-
+<html lang="en">
   <head>
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -17,11 +11,14 @@
 	<link rel="stylesheet" href="./style.css">
     <style type="text/css">
       body { -ms-touch-action: ;
+	  
+	  margin: 0px !important;
+    padding: 0px 
 	  }
 	  
  #viewwindow{
  
-position: static !important;
+osition: static !important;
     
 }
 
@@ -39,7 +36,10 @@ position:absolute; !important;
     overflow: initial !important;
 }
 
-
+#btnZmOut {
+    bottom: -14px !important;
+    left: 93px !important;
+}
  #viewwindow{
  
 *position: static !important;
@@ -177,9 +177,9 @@ max-width:80% !important;
      <! --
 	 <input type="range" id="r1" min="20" max="200" value="100"
 			 oninput="fun1()" -->
-   <button id="btnZmIn" style="bottom:0px; left:0px" type="button" onclick="zoomin()"> Zoom In</button>
+    <button id="btnZmIn" style="bottom:0px; left:0px" type="button" onclick="zoomin()"> +</button>
    
-   <button id="btnZmOut" style="bottom:0px; left:40px" type="button" onclick="zoomout()"> Zoom Out</button>
+   <button id="btnZmOut" style="bottom:0px; left:40px" type="button" onclick="zoomout()"> -</button>
 	
 	<div id="KeyShotVR"></div>
 	

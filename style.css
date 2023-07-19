@@ -12,9 +12,9 @@ z-index:999;
   background-color: #c2185b;
   box-shadow: 0 2px 5px 0 rgba(0,0,0, 0.26);
   cursor: pointer;
-  bottom: 0px;
+  
     position: absolute;
-    left: 0px;
+    
 	z-index: 999;
 }
 

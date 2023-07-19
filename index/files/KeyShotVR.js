@@ -477,85 +477,110 @@ window.keyshotVR = function(U, v, V, W, pa, D, qa, ra, sa, ta, ua, J, K, X, Y, v
         O(a, "mouseup", N)
     };
     this.Qa = function() {
-        a.p && (a.p.style.visibility = "hidden",
-            a.aa(a.p), a.aa(a.Q), a.aa(a.o))
+    a.p && (a.p.style.visibility = "hidden",
+        a.aa(a.p), a.aa(a.Q), a.aa(a.o))
+};
+
+this.Ka = function() {
+    a.A.style.visibility = "hidden";
+    a.aa(a.A);
+};
+
+var Ha = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(a) {
+    window.setTimeout(a, 10);
+};
+
+this.ta = function() {
+    a.p = document.createElement("div");
+    a.U(a.p);
+    a.p.V = function() {
+        this.parentNode && (this.style.left = "16px", this.style.top = "16px");
     };
-    this.Ka = function() {
-        a.A.style.visibility = "hidden";
-        a.aa(a.A)
+
+    // Check if it's a smartphone (width is less than or equal to 768px)
+    var isSmartphone = window.innerWidth <= 768;
+
+    var b = "position: absolute;";
+    b += "left: 50%;";
+    
+    // Center vertically on smartphones
+    if (isSmartphone) {
+        b += "top: 50%;";
+        b += "transform: translate(-50%, -50%);";
+    } else {
+        b += "top: 0;";
+    }
+
+    b += "width: 80px;";
+    b += "height: 80px;";
+    b += y + "transform-origin: 50% 50%;";
+    b += "visibility: inherit;";
+    a.p.setAttribute("style", b);
+
+    a.Q = document.createElement("div");
+    a.U(a.Q);
+    b = "position: absolute;";
+    b += "left: 0px;";
+    b += "top: 29px;";
+    b += "width: 80px;";
+    b += "height: 80px;";
+    b += y + "transform-origin: 50% 50%;";
+    b += "opacity: 1.0;";
+    b += "visibility: inherit;";
+    b += "border: 0px solid #000000;";
+    b += "color: #ffffff;";
+    b += "text-align: left;";
+    b += "white-space: nowrap;";
+    b += "padding: 0px 0px 0px 0px;";
+    b += "overflow: hidden;";
+    a.Q.setAttribute("style", b);
+
+    a.o = document.createElement("div");
+    a.U(a.o);
+    a.o.$ = {
+        Ma: 0,
+        Na: 0,
+        ia: 0,
+        Oa: 1,
+        Pa: 1,
+        eb: 1
     };
-    var Ha = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(a) {
-        window.setTimeout(a, 10)
-    };
-    this.ta = function() {
-        a.p = document.createElement("div");
-        a.U(a.p);
-        a.p.V = function() {
-            this.parentNode && (this.style.left = "16px", this.style.top = "16px")
-        };
-        b = "position:absolute;";
-        b += "left: 0px;";
-        b += "top:  0px;";
-        b += "width: 80px;";
-        b += "height: 80px;";
-        b += y + "transform-origin: 50% 50%;";
-        b += "visibility: inherit;";
-        a.p.setAttribute("style", b);
-        a.Q = document.createElement("div");
-        a.U(a.Q);
-        b = "position:absolute;";
-        b += "left: 0px;";
-        b += "top:  29px;";
-        b += "width: 80px;";
-        b += "height: 80px;";
-        b += y + "transform-origin: 50% 50%;";
-        b += "opacity: 1.0;";
-        b += "visibility: inherit;";
-        b += "border: 0px solid #000000;";
-        b += "color: #ffffff;";
-        b += "text-align: left;";
-        b += "white-space: nowrap;";
-        b += "padding: 0px 0px 0px 0px;";
-        b += "overflow: hidden;";
-        a.Q.setAttribute("style",
-            b);
-        a.o = document.createElement("div");
-        a.U(a.o);
-        a.o.$ = {
-            Ma: 0,
-            Na: 0,
-            ia: 0,
-            Oa: 1,
-            Pa: 1,
-            eb: 1
-        };
-        b = "position:absolute;";
-        b += "left: 0px;";
-        b += "top:  0px;";
-        b += "width: 80px;";
-        b += "height: 80px;";
-        b += y + "transform-origin: 50% 50%;";
-        b += "opacity: 1.0;";
-        b += "visibility: inherit;";
-        b += "border: 0px solid #000000;";
-        b += "color: #ffffff;";
-        b += "text-align: left;";
-        b += "white-space: nowrap;";
-        b += "padding: 0px 0px 0px 0px;";
-        b += "overflow: hidden;";
-        var c = ya;
-        "" == c && (c = "ks_logo.png");
-        a.o.setAttribute("style", b);
-        a.o.innerHTML = '<img src="' + A +
-            a.s + "/files/" + c + '"></img>';
-        a.p.appendChild(a.o);
-        a.p.appendChild(a.Q);
-        n.appendChild(a.p);
+    b = "position: absolute;";
+    b += "left: 0px;";
+    
+    // Center vertically on smartphones
+    if (isSmartphone) {
+        b += "top: 50%;";
+        b += "transform: translate(-50%, -50%);";
+    } else {
+        b += "top: 0;";
+    }
+
+    b += "width: 80px;";
+    b += "height: 80px;";
+    b += y + "transform-origin: 50% 50%;";
+    b += "opacity: 1.0;";
+    b += "visibility: inherit;";
+    b += "border: 0px solid #000000;";
+    b += "color: #ffffff;";
+    b += "text-align: left;";
+    b += "white-space: nowrap;";
+    b += "padding: 0px 0px 0px 0px;";
+    b += "overflow: hidden;";
+    var c = ya;
+    "" == c && (c = "ks_logo.png");
+    a.o.setAttribute("style", b);
+    a.o.innerHTML = '<img src="' + A + a.s + "/files/" + c + '"></img>';
+    
+    a.p.appendChild(a.o);
+    a.p.appendChild(a.Q);
+    n.appendChild(a.p);
+    a.u(a.l);
+    setTimeout(function() {
         a.u(a.l);
-        setTimeout(function() {
-            a.u(a.l)
-        }, 10)
-    };
+    }, 10);
+};
+
     this.Ra = function(b) {
         if (a.p) {
             a.Q.innerHTML = "<center>" + parseInt(100 * b) + "</center>";
@@ -921,3 +946,4 @@ window.keyshotVR = function(U, v, V, W, pa, D, qa, ra, sa, ta, ua, J, K, X, Y, v
         }, 15)
     } else alert("Your browser must support HTML5 to show KeyShotVR")
 };
+

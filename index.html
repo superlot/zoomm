@@ -17,10 +17,11 @@
       body { -ms-touch-action: ;
 	  }
 	  
-	  #turntable{
-top: 0px !important;
+ #viewwindow{
+ 
+position: static !important;
+    
 }
-
 
 @media (min-width: 768px) {
   body {
@@ -55,9 +56,9 @@ position:absolute; !important;
   z-index:999;
   right:0;
   bottom:0;
-  margin-right:5px;
-  width:3%;
-  margin-bottom:5px;
+  *margin-right:5px;
+  *width:3%;
+  *margin-bottom:5px;
 }
 
 	 #btnZmIn{
@@ -75,12 +76,12 @@ position:absolute; !important;
   z-index:999;
   left:6%;
   bottom:0;
-  margin-left:5px;
+  *margin-left:5px;
   width:5%;
-  margin-bottom:5px;
+  **margin-bottom:5px;
 	 }
 	  
-      #back{
+      *#back{
 margin-top:%;
 margin-right:px;
 margin-bu:px;
@@ -113,7 +114,7 @@ max-width:80% !important;
     {
 #KeyShotVR{
 
-max-width:80% !important;
+*max-width:80% !important;
 }
 
 
@@ -181,7 +182,13 @@ max-width:80% !important;
 	<div id="KeyShotVR"></div>
 	
 	</div>
-	<input id="full" type="image" src="images/fullpage.png" >
+	<input id="full" type="image" src="images/fullpage.png" style=" position:absolute;
+  z-index:999;
+  right:0;
+  bottom:0;
+  *margin-right:5px;
+  *width:3%;
+  *margin-bottom:5px; " >
 	
 	
 	

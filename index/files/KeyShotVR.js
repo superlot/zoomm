@@ -806,7 +806,7 @@ window.keyshotVR = function(U, v, V, W, pa, D, qa, ra, sa, ta, ua, J, K, X, Y, v
         q = document.createElement("img");
         q.setAttribute("id", "backbuffer");
         // ORIGINAL b = "top:  0px;";
-	 b = "top:  25%;";
+	 b = "top:  20%;";
         b += "left: 0px;";
         b += "position:absolute;";
         b += y + "user-select: none;";
